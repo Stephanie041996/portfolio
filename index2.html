@@ -1,0 +1,170 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stephanie Portfolio</title>
+  <!-- Required meta tags -->
+
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+<script
+  src="https://kit.fontawesome.com/b1a74662a4.js"
+  crossorigin="anonymous"
+></script>
+<link rel="stylesheet" href="./style.css" />
+
+<!-- Bootstrap CSS -->
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+/>
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+
+<div class="container p-4">
+    <h1>Multiple Modals on a Page - Bootstrap 4</h1>
+    <a href="https://getbootstrap.com/docs/4.3/components/modal/#varying-modal-content">Documentation</a>
+  <hr>
+<!-- Modal 1 Content   -->
+<button 
+type="button" 
+class="btn btn-secondary" 
+data-toggle="modal" 
+data-target="#templateModal" 
+data-name="name"
+data-title="model 1"
+data-project="Keeping track of hundreds of components model 1"
+data-languages="GitHub Javascript Bootstrap Terminal model 1"
+data-logo="https://dummyimage.com/400x200/000/fff.png&text=modal+3"
+data-details="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea"
+
+>
+Modal 1
+</button>  
+  
+  
+<!-- Modal 2 Content   -->
+<button 
+type="button" 
+class="btn btn-secondary" 
+data-toggle="modal" 
+data-target="#templateModal" 
+data-name="name"
+data-title="model 2"
+data-project="Keeping track of hundreds of components model 2"
+data-languages="GitHub Javascript Bootstrap Terminal model 2"
+data-logo="https://dummyimage.com/400x200/000/fff.png&text=modal+3"
+data-details="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea"
+
+>
+Modal 2
+</button> 
+  
+  
+  <!-- Modal 3 Content   -->
+<button 
+type="button" 
+class="btn btn-secondary" 
+data-toggle="modal" 
+data-target="#templateModal" 
+data-name="name"
+data-title="model 3"
+data-project="Keeping track of hundreds of components model 3"
+data-languages="GitHub Javascript Bootstrap Terminal model 3"
+data-logo="https://dummyimage.com/400x200/000/fff.png&text=modal+3"
+data-details="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea"
+
+>
+Modal 3
+</button> 
+  
+  
+  
+<!--  Modal template  -->
+          <div class="modal fade modal-wide" id="templateModal" tabindex="-1" role="dialog" aria-labelledby="templateModal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+        
+              <div class="modal-body">
+                <span type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+        
+                <img alt="logo" class="modal-logo"> 
+                <h2 class="modal-title"></h2>
+                <p class="modal-name"></p>
+                <div class="row">
+                    <div class="col-6">
+                 <h4 class="modal-project"></h4></div>
+                 <div class="col-2">
+                <button class="btn btn-success btn-sm m-1" type="button">Send</button>
+                </div>
+                  <div class="col-2">
+                  <button class="btn btn-info btn-sm m-1" type="button">Clear</button>
+                 </div>
+                 </div>
+                 <br>
+                <p class="modal-languages"></p>
+                <p class="modal-logo"></p>
+                <p class="modal-details"></p>
+                
+                
+        
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.modal -->
+  
+  
+</div>
+<!-- /.container -->
+
+
+</body>
+
+<script>
+
+    $(document).ready(function() {
+      // executes when HTML-Document is loaded and DOM is ready
+    
+      $("button").each(function(index) {
+        var logo = $(this).data("logo");
+        $(this)
+          .find(".button-logo")
+          .attr("src", $(this).data("logo"));
+      });
+    
+      $("#templateModal").on("show.bs.modal", function(event) {
+        var button = $(event.relatedTarget);
+        var modal = $(this);
+        modal.find(".modal-title").text(button.data("title"));
+        modal.find(".modal-title").text(button.data("title"));
+        modal.find(".modal-project").text(button.data("project"));
+        modal.find(".modal-languages").text(button.data("languages"));
+        modal.find(".modal-logo").attr("src", button.data("logo"));
+        modal.find(".modal-details").text(button.data("details"));
+        
+       
+      });
+    
+    
+      
+    
+      
+    
+      // document ready
+    });
+    
+    </script>
+</html>
