@@ -11,13 +11,14 @@ body {
 
 header {
     width: 100%;
-    height: 100vh;
+    height: 118vh;
     background-color: #1C1A19;
     background-size: cover;
 }
 
 .container{
-    padding: 180px;
+ 
+    padding: 110px;
 }
 
 .container-works{
@@ -40,7 +41,7 @@ header {
     position: fixed;
     float: left;
     margin: 16px 46px;
-    color: #fff;
+    color: #4ed4d4;
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 2px;
@@ -94,7 +95,7 @@ nav ul li a {
 }
 
 h2 {
-    font-size: 55px !important;
+    font-size: 35px !important;
     color:#fff !important;
 }
 
@@ -156,25 +157,36 @@ h3{
     0%{
         color:red;
         opacity: 0;
-        top: 50px
+        top: 0px;
+        left:0px;
+    }
+
+    0%{
+        color:red;
+       
+        top: 50px;
+        left:20px;
     }
 
     25%{
         color:green;
         opacity: 1;
-        top: 100px
+        top: 100px;
+        left:50px;
     }
 
     50%{
-        color:blue;
+        color:#4ed4d4;
         opacity: 1;
-        top: 150px
+        top: 150px;
+        left: 0px;
     }
 
     75%{
         color:orangered;
         opacity: 1;
-        top: 200px
+        top: 200px;
+        left: 80px;
     }
 
     100%{
@@ -196,9 +208,30 @@ h3{
     padding-right: 35px;
 }
 
+.overview{
+background-color: black;
+background-image: linear-gradient(315deg, #1C1A19 0%, #2a8187 15%,#4ed4d4 84%);
+}
 
-@media(max-width: 786px) {
+.highlight{
+color: #4ed4d4;
+}
 
+.btn-dark:hover {
+    color: #fff;
+    background-color: #4ed4d4 !important;
+    border-color: #1d2124;
+}
+
+@media(max-width: 768px) {
+    .text-1{
+
+    display: none;
+    }
+    .container{
+       
+        padding: 100px;
+    }
     .logo {
           position: fixed;
           top: 0;
