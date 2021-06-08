@@ -94,18 +94,15 @@ nav ul li a {
     display: none;
 }
 
-h2 {
+h1 {
     font-size: 35px !important;
     color:#fff !important;
 }
 
-p {
-    color:#fff;
+.intro {
+    color:#fff !important;
 }
 
-h3{
-
-}
 .text-1{
 
     align-content: center;
@@ -229,6 +226,9 @@ font-size: 12px !important;
 line-height : 20px;
 }
 
+.card-img-top{
+    height: 180px;
+}
 
 
 @media(max-width: 768px) {
