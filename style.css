@@ -57,7 +57,7 @@ nav {
 nav ul {
     line-height: 60px;
     list-style: none;
-    background: rgba(0, 0, 0, 0);
+    background: #1C1A19;
     overflow: hidden;
     color: #fff;
     padding: 0;
@@ -209,7 +209,7 @@ h3{
 }
 
 .overview{
-background-color: black;
+background-color: #1C1A19;
 background-image: linear-gradient(315deg, #1C1A19 0%, #2a8187 15%,#4ed4d4 84%);
 }
 
@@ -222,6 +222,14 @@ color: #4ed4d4;
     background-color: #4ed4d4 !important;
     border-color: #1d2124;
 }
+
+.details-content, p{
+    color: #1C1A19!important;
+font-size: 12px !important;
+line-height : 20px;
+}
+
+
 
 @media(max-width: 768px) {
     .text-1{
