@@ -173,6 +173,14 @@ line-height : 20px;
     display: none;
 }
 
+.footer{
+background-color: #1C1A19;
+
+}
+
+.icon {
+    color: #fff;
+}
 /* ON large screen */
 @media screen and (min-width: 768px) {
     .container-showcase{
