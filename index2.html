@@ -1,5 +1,3 @@
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,6 +12,10 @@
   src="https://kit.fontawesome.com/b1a74662a4.js"
   crossorigin="anonymous"
 ></script>
+
+<link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
 <link rel="stylesheet" href="./style.css" />
 
 <!-- Bootstrap CSS -->
@@ -23,148 +25,430 @@
   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
   crossorigin="anonymous"
 />
-<link
-  rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </head>
 <body>
-  
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <a href="#" class="navbar-brand">
+            <img src="images/logo.svg" height="28" alt="CoolBrand">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a href="port" class="nav-item nav-link">Profile</a>
+                <a href="about" class="nav-item nav-link">Messages</a>
+                <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a href="#" class="nav-item nav-link">Login</a>
+            </div>
+        </div>
+    </nav>
 
-<div class="container p-4">
-    <h1>Multiple Modals on a Page - Bootstrap 4</h1>
-    <a href="https://getbootstrap.com/docs/4.3/components/modal/#varying-modal-content">Documentation</a>
-  <hr>
-<!-- Modal 1 Content   -->
-<button 
-type="button" 
-class="btn btn-secondary" 
-data-toggle="modal" 
-data-target="#templateModal" 
-data-name="name"
-data-title="model 1"
-data-project="Keeping track of hundreds of components model 1"
-data-languages="GitHub Javascript Bootstrap Terminal model 1"
-data-logo="https://dummyimage.com/400x200/000/fff.png&text=modal+3"
-data-details="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea"
+    <div class="container-fluid bg-dark">
 
->
-Modal 1
-</button>  
-  
-  
-<!-- Modal 2 Content   -->
-<button 
-type="button" 
-class="btn btn-secondary" 
-data-toggle="modal" 
-data-target="#templateModal" 
-data-name="name"
-data-title="model 2"
-data-project="Keeping track of hundreds of components model 2"
-data-languages="GitHub Javascript Bootstrap Terminal model 2"
-data-logo="https://dummyimage.com/400x200/000/fff.png&text=modal+3"
-data-details="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea"
-
->
-Modal 2
-</button> 
-  
-  
-  <!-- Modal 3 Content   -->
-<button 
-type="button" 
-class="btn btn-secondary" 
-data-toggle="modal" 
-data-target="#templateModal" 
-data-name="name"
-data-title="model 3"
-data-project="Keeping track of hundreds of components model 3"
-data-languages="GitHub Javascript Bootstrap Terminal model 3"
-data-logo="https://dummyimage.com/400x200/000/fff.png&text=modal+3"
-data-details="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea"
-
->
-Modal 3
-</button> 
-  
-  
-  
-<!--  Modal template  -->
-          <div class="modal fade modal-wide" id="templateModal" tabindex="-1" role="dialog" aria-labelledby="templateModal">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
+        <!--Section: Main info-->
+        <section>
         
-              <div class="modal-body">
-                <span type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-        
-                <img alt="logo" class="modal-logo"> 
-                <h2 class="modal-title"></h2>
-                <p class="modal-name"></p>
-                <div class="row">
-                    <div class="col-6">
-                 <h4 class="modal-project"></h4></div>
-                 <div class="col-2">
-                <button class="btn btn-success btn-sm m-1" type="button">Send</button>
-                </div>
-                  <div class="col-2">
-                  <button class="btn btn-info btn-sm m-1" type="button">Clear</button>
-                 </div>
-                 </div>
-                 <br>
-                <p class="modal-languages"></p>
-                <p class="modal-logo"></p>
-                <p class="modal-details"></p>
-                
-                
-        
-              </div>
+          <!--Grid row-->
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
+              
+              <!-- Main heading -->
+             
+              <h1><strong>Hi<br> I'm <div class="highlight">Stephanie,</div>Full Stack Developer</strong> </h1>
+              <p class ="intro ">Hello I am a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesistate to contact me.</p>
+              <!-- Main heading -->
+  
+              <hr>
+            
+              <a href="#port"></a><i class="fas fa-arrow-circle-down  fa-3x"></i></a>
+
+            
+              <i class="fab fa-github fa-2x"></i>
+             
+             
+              <i class="fab fa-linkedin fa-2x"></i>
+
+              <i class="fab fa-angellist fa-2x"></i>
+       
+  
+            </div>
+            <!--Grid column-->
+             <!--Grid column-->
+             <div class="code-text col-md-6 mb-4 d-flex justify-content-center">
+
+  <div class="text-1">
+    <ul id="list">
+    <li>&lt;head&gt;</li>
+    <li> &nbsp; &lt;body&gt;</li>
+    <li> &nbsp; &nbsp; &lt;section&gt;</li>
+    <li>&nbsp; &nbsp; &nbsp;&lt;h1&gt;My name is Stephanie&lt; &#47;h1&gt;</li>
+    <li>&nbsp; &nbsp; &lt; &#47;section&gt;</li>
+    <li>&nbsp; &lt; &#47;body&gt;</li>
+    <li>&lt; 	&#47;head&gt;</li>
+  </ul>
+  </div>
+
+  
+            </div>
+            <!--Grid column-->
+  
+          </div>
+          <!--Grid row-->
+  
+        </section>
+        </div>
+
+
+      <a id="port"><h3 class="text-center">Recent Works</h3></a>
+        <br>
+      
+        <div class="card-columns">
+          <div class="card ">
+            <img class="card-img-top" src="images/chill.png" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-title">Image Repository</h4>
+              <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-dark">Ruby on Rails</a>
+                <a href="#" class="btn btn-dark">PostgreSQL</a>
+               
+              </div> 
+              <br>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modalone">
+                View project
+              </button>
+              
             </div>
           </div>
-        </div>
-        <!-- /.modal -->
-  
-  
+<!-- Modal -->
+<div class="modal fade" id="Modalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="card-img-top" src="images/chill.png" alt="Card image" style="width:100%">
+      </div>
+      <div class="modal-footer d-flex">
+        <h4 class="modal-title mr-auto p-2" id="exampleModalLabel">Image Repository</h4>
+        <a href="https://boiling-lake-63757.herokuapp.com/" class="btn btn-dark p-2">See live</a>
+        <a href="https://github.com/Stephanie041996/Image_Repository" class="btn btn-dark p-2">See Source</a>
+      </div>
+      <div class="details-content pr-4 pl-4" >
+      <div class="btn-group pb-4">
+        <a href="#" class="btn btn-dark">Ruby on Rails</a>
+        <a href="#" class="btn btn-dark">PostgreSQL</a>
+      
+      </div> 
+      <br>
+      <p>This is an Image Repository App built with Ruby on Rails. The App is called Image Hub and is a photo sharing platform. It is to help people experince new places through photos. search for Images of places you may want to travel and also share your own images and add a location in the caption. You may only Edit or Delete images if you are the one who posted it.</p>
+    </div>
+  </div>
+  </div>
 </div>
-<!-- /.container -->
+<!--model ends-->
+          <div class="card ">
+            <img class="card-img-top" src="images/Untitled design.png" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-title">Domicile Real Estate Store</h4>
+              <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-dark">Css</a>
+                <a href="#" class="btn btn-dark">Html</a>
+                <a href="#" class="btn btn-dark">Bootstrap</a>
+              </div> 
+              <br>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modaltwo">
+                View project
+              </button>
+              
+            </div>
+          </div>
+          <!-- Modal -->
+<div class="modal fade" id="Modaltwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="card-img-top" src="images/Untitled design.png" alt="Card image" style="width:100%">
+      </div>
+      <div class="modal-footer d-flex">
+        <h4 class="modal-title mr-auto p-2" id="exampleModalLabel">Domicile Real Estate Store</h4>
+        <a href="https://stephanie041996.github.io/Capstone1/" class="btn btn-dark p-2">See live</a>
+        <a href="https://github.com/Stephanie041996/Capstone1" class="btn btn-dark p-2">See Source</a>
+      </div>
+      <div class="details-content pr-4 pl-4" >
+      <div class="btn-group pb-4">
+        <a href="#" class="btn btn-dark">Css</a>
+        <a href="#" class="btn btn-dark">Html</a>
+        <a href="#" class="btn btn-dark">Bootstrap</a>
+      </div> 
+      <br>
+      <p>The project an online store website and I opted to build one that showcases properties for sell and rent. It has two pages.
+The Home page,
+        The Search page
+    </p>
+    </div>
+  </div>
+  </div>
+</div>
+<!--model ends-->
+          <div class="card">
+            <img class="card-img-top" src="images/CSS Linter Project.png" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-title">CSS Linter(error checker)</h4>
+              <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-dark">Ruby</a>
+              </div> 
+              <br>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modalthree">
+                View project
+              </button>
+            </div>
+          </div>
+          <!-- Modal -->
+<div class="modal fade" id="Modalthree" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="card-img-top" src="images/CSS Linter Project.png" alt="Card image" style="width:100%">
+      </div>
+      <div class="modal-footer d-flex">
+        <h4 class="modal-title mr-auto p-2" id="exampleModalLabel">CSS Linter(error checker)</h4>
+        <a href="https://github.com/Stephanie041996/Capstone_linters_project" class="btn btn-dark p-2">See live</a>
+        <a href="https://github.com/Stephanie041996/Capstone_linters_project" class="btn btn-dark p-2">See Source</a>
+      </div>
+      <div class="details-content pr-4 pl-4" >
+      <div class="btn-group pb-4">
+        <a href="#" class="btn btn-dark">Ruby</a>
+      </div> 
+      <br>
+      <p>This is a basic CSS linter project. It checks basic syntax in the provided CSS file and returns error messages.</p>
+    </div>
+  </div>
+  </div>
+</div>
+<!--model ends-->
+          <div class="card">
+            <img class="card-img-top" src="images/At YourTableCatering.png" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-title">At Your Table Catering</h4>
+              <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-dark">Wordpress</a>
+                <a href="#" class="btn btn-dark">UI Design</a>
+                <a href="#" class="btn btn-dark">Figma</a>
+              </div> 
+              <br>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modalfour">
+                View project
+              </button>
+            </div>
+          </div>  
+          <!-- Modal -->
+<div class="modal fade" id="Modalfour" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="card-img-top" src="images/At YourTableCatering.png" alt="Card image" style="width:100%">
+      </div>
+      <div class="modal-footer d-flex">
+        <h4 class="modal-title mr-auto p-2" id="exampleModalLabel">At your Table catering</h4>
+        <a href="https://atyourtablecatering.co.zw/" class="btn btn-dark p-2">See live</a>
+        <a href="https://atyourtablecatering.co.zw/" class="btn btn-dark p-2">See Source</a>
+      </div>
+      <div class="details-content pr-4 pl-4" >
+      <div class="btn-group pb-4">
+        <a href="#" class="btn btn-dark">Wordpress</a>
+        <a href="#" class="btn btn-dark">UI Design</a>
+        <a href="#" class="btn btn-dark">Figma</a>
+      </div> 
+      <br>
+      <p>This freelance website design project is an original design, UI design was created using Figma for a food catering online booking site. Wordpress was used as the tool of design by the customer to allow for easy use of the CMS in the backend.</p>
+    </div>
+  </div>
+  </div>
+</div>
+<!--model ends-->
+          <div class="card ">
+            <img class="card-img-top" src="images/Productivity App.png" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-title">Productivity Mobile App</h4>
+              <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-dark">Ruby on Rails</a>
+                <a href="#" class="btn btn-dark">Bootstrap</a>
+              </div> 
+              <br>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modalfive">
+                View project
+              </button>
+            </div>
+          </div>
+          <!-- Modal -->
+<div class="modal fade" id="Modalfive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="card-img-top" src="images/Productivity App.png" alt="Card image" style="width:100%">
+      </div>
+      <div class="modal-footer d-flex">
+        <h4 class="modal-title mr-auto p-2" id="exampleModalLabel">Productivity Mobile App</h4>
+        <a href="https://radiant-chamber-42308.herokuapp.com/" class="btn btn-dark p-2">See live</a>
+        <a href="https://github.com/Stephanie041996/Activity_App" class="btn btn-dark p-2">See Source</a>
+      </div>
+      <div class="details-content pr-4 pl-4" >
+      <div class="btn-group pb-4">
+        <a href="#" class="btn btn-dark">Ruby on Rails</a>
+        <a href="#" class="btn btn-dark">PostgreSQL</a>
+        <a href="#" class="btn btn-dark">Bootstrap</a>
+      </div> 
+      <br>
+      <p>Group Productivity is a mobile-only app where you can sign up (and/or sign in) using only your name, create groups and add activities. View created groups, created by all users and view your own groups and activities. Keep track of the mins you spent on your activities, stay motivated by comparing to others on the app, make it a fun competetion. This Ruby on Rails project is based on an app for grouping activities by goal with your family/friends</p>
+    </div>
+  </div>
+  </div>
+</div>
+<!--model ends-->
+          <div class="card">
+            <img class="card-img-top" src="images/img_avatar1.png" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-title">Project Tittle</h4>
+              <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-dark">Css</a>
+                <a href="#" class="btn btn-dark">Html</a>
+                <a href="#" class="btn btn-dark">Ruby</a>
+              </div> 
+              <br>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modalsix">
+                View project
+              </button>
+            </div>
+          </div>
+            <!-- Modal -->
+<div class="modal fade" id="Modalsix" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="card-img-top" src="images/img_avatar1.png" alt="Card image" style="width:100%">
+      </div>
+      <div class="modal-footer d-flex">
+        <h4 class="modal-title mr-auto p-2" id="exampleModalLabel">Project Six title</h4>
+        <a href="#" class="btn btn-dark p-2">See live</a>
+        <a href="#" class="btn btn-dark p-2">See Source</a>
+      </div>
+      <div class="details-content pr-4 pl-4" >
+      <div class="btn-group pb-4">
+        <a href="#" class="btn btn-dark">Css</a>
+        <a href="#" class="btn btn-dark">Html</a>
+        <a href="#" class="btn btn-dark">Ruby</a>
+      </div> 
+      <br>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+    </div>
+  </div>
+  </div>
+</div>
+<!--model ends-->
+        </div>
+      </div>
+      <div class="container-about text-center">
+        <a id="about"><h3>About Me</h3></a>
+        <h4> I can help you build a product , feature or website Look through some of my work and experience! <br>If you like what you see and have a project you need coded, <br>
+          don’t hestiate to contact me.</h4>
+          <a href="#"  class="btn btn-dark stretched-link">Get my Resume</a>
+
+      </div>
+      <div class="container">
+        <div class="card-columns">
+          <div class="card overview">
+            
+            <div class="card-body text-center">
+              <i class="fas fa-globe fa-3x"></i>
+              <h4 class="card-title">Languages</h4>
+              <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-dark">Ruby</a>
+                <a href="#" class="btn btn-dark">Javascript</a>
+              </div> 
+              <br>
+              
+            </div>
+          </div>
+          <div class="card overview">
+            
+            <div class="card-body text-center">
+              <i class="fas fa-cogs fa-3x"></i>
+              <h4 class="card-title">Frameworks</h4>
+              <div class="btn-group btn-group-justified pb-2">
+                <a href="#" class="btn btn-dark">Ruby on Rails</a>
+                <a href="#" class="btn btn-dark">Bootstrap</a>
+      
+              </div> 
+             
+              <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-dark">RSpec</a>
+                <a href="#" class="btn btn-dark">Wordpress</a>
+
+              </div> 
+              <br>
+            </div>
+          </div>
+          <div class="card overview">
+            
+            <div class="card-body text-center">
+              <i class="fas fa-bolt fa-3x"></i>
+              <h4 class="card-title">Skills</h4>
+              <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-dark">GitHub</a>
+                <a href="#" class="btn btn-dark">Terminal</a>
+                <a href="#" class="btn btn-dark ">UI Design</a>
+              </div> 
+              <br>
+            
+            </div>
+          </div>
+          </div>
+      </div>
+
+
+
+
 
 
 </body>
-
-<script>
-
-    $(document).ready(function() {
-      // executes when HTML-Document is loaded and DOM is ready
-    
-      $("button").each(function(index) {
-        var logo = $(this).data("logo");
-        $(this)
-          .find(".button-logo")
-          .attr("src", $(this).data("logo"));
-      });
-    
-      $("#templateModal").on("show.bs.modal", function(event) {
-        var button = $(event.relatedTarget);
-        var modal = $(this);
-        modal.find(".modal-title").text(button.data("title"));
-        modal.find(".modal-title").text(button.data("title"));
-        modal.find(".modal-project").text(button.data("project"));
-        modal.find(".modal-languages").text(button.data("languages"));
-        modal.find(".modal-logo").attr("src", button.data("logo"));
-        modal.find(".modal-details").text(button.data("details"));
-        
-       
-      });
-    
-    
-      
-    
-      
-    
-      // document ready
-    });
-    
-    </script>
 </html>

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,13 +13,14 @@
   src="https://kit.fontawesome.com/b1a74662a4.js"
   crossorigin="anonymous"
 ></script>
-<!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+
 <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
 <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
 <link rel="stylesheet" href="./style.css" />
 
 <!-- Bootstrap CSS -->
+
 <link
   rel="stylesheet"
   href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -30,65 +32,68 @@
   rel="stylesheet"
   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
 />
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 <body>
   
     <header>
-        <nav>
-           <div class="menu-icon">
-              <i class="fa fa-bars fa-2x"></i>
-           </div>
-           <div class="logo">
-              SMS
-           </div>
-           <div class="menu">
-              <ul>
-                 <li><a href="#">Home</a></li>
-                 <li><a href="#">Portfolio</a></li>
-                 <li><a href="#">About</a></li>
-                 <li><a href="#">Contact</a></li>
-              </ul>
-           </div>
-        </nav>
+      <nav class="navbar navbar-expand-md navbar-dark px-5  navbar-fixed-top">
+      <h3 class="highlight px-5 pr-4 mr-5"><strong>SMS</strong></h3>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav  px-5 pr-4">
+             
+               <a href="#" class="nav-item nav-link active mr-5">Home</a>
+                <a href="#port" class="nav-item nav-link mr-5">Portfolio</a>
+               <a href="#about" class="nav-item nav-link mr-5">About Me</a>
+               <a href="#contact" class="nav-item nav-link mr-5">Contact</a>
+             
+            </div>
+           
+        </div>
+    </nav>
         
-        <div class="container">
+        <div class="container-showcase">
 
           <!--Section: Main info-->
           <section>
           
             <!--Grid row-->
             <div class="row">
-    
-             
-    
+  
               <!--Grid column-->
-              <div class="col-md-6 mb-4">
+              <div class=" col-sm-12 col-md-6 ">
                 
                 <!-- Main heading -->
                
-                <h2><strong>Hi<br> I'm Stephanie,<br>Full Stack Developer</strong> </h2>
-                <p>Hello I am a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have project you need coded, don’t hesistate to contact me.</p>
+                <h1><strong>Hi<br> I'm <div class="highlight">Stephanie,</div>Full Stack Developer</strong> </h1>
+                <p class ="intro ">Hello I am a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesistate to contact me.</p>
                 <!-- Main heading -->
     
                 <hr>
-                <!-- CTA -->
-                <i class="fas fa-arrow-circle-down  fa-4x"></i>
+              
+                <a href="#port" class="icon"><i class="fas fa-arrow-circle-down  fa-3x"></i></a>
 
               
-                <i class="fab fa-github fa-3x"></i>
+              <a href="https://github.com/Stephanie041996" class="icon" target="_blank"><i class="fab fa-github fa-2x"></i></a>
                
                
-                <i class="fab fa-linkedin fa-3x"></i>
+                <a href="https://www.linkedin.com/in/stephanie-michelle-sakuhuni/"  class="icon" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
 
-                <i class="fab fa-angellist fa-3x"></i>
+              <a href="" class="icon"><i class="fab fa-angellist fa-2x"></i></a>
          
     
               </div>
               <!--Grid column-->
                <!--Grid column-->
-               <div class="col-md-6 mb-4 d-flex justify-content-center">
+               <div class="code-text col-md-6 hidden-xs mb-4 d-flex justify-content-center">
   
     <div class="text-1">
       <ul id="list">
@@ -102,16 +107,6 @@
     </ul>
     </div>
 
-    <!-- <li>while turn &lt; 9</li>
-  <li>if turn.even?</li>
-  <li>puts result.one_output</li>
-    <li>if result.game.win?(result.status)</li>
-      <li>puts "{result.player_one} WINS THE GAME"</li>
-      <li>break</li>
-    <li>elsif result.game.tie?(result.status)</li>
-      <li>puts "It's a TIE , no one wins"</li>
-      <li>break</li>
-    <li>end</li> -->
     
               </div>
               <!--Grid column-->
@@ -121,155 +116,363 @@
     
           </section>
           </div>
+          
      </header>
+     <main>
      <div class="content">
 
-      <div class="container-works">
-        <h3 class="text-center">Recent Works</h3>
+      <a id="port"><div class="container"></a>
+       
+   <h2 class="text-center">Recent Works</h2>
         <br>
-        
+      
         <div class="card-columns">
-          <div class="card bg-dark">
-            <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+          <div class="card ">
+            <img class="card-img-top" src="images/chill.png" alt="Card image" style="width:100%">
             <div class="card-body text-center">
-              <h4 class="card-title">Project Tittle</h4>
+              <h4 class="card-title">Image Repository</h4>
               <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-primary">Css/a>
-                <a href="#" class="btn btn-primary">Html</a>
-                <a href="#" class="btn btn-primary">Ruby</a>
+                <a href="#" class="btn btn-dark">Ruby on Rails</a>
+                <a href="#" class="btn btn-dark">PostgreSQL</a>
+               
               </div> 
               <br>
-              <a href="#" class="btn btn-primary stretched-link">View Project</a>  
-            </div>
-          </div>
-
-
-          <div class="card bg-dark">
-            <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
-            <div class="card-body text-center">
-              <h4 class="card-title">Project Tittle</h4>
-              <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-primary">Css/a>
-                <a href="#" class="btn btn-primary">Html</a>
-                <a href="#" class="btn btn-primary">Ruby</a>
-              </div> 
-              <br>
-              <a href="#" class="btn btn-primary stretched-link">View Project</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modalone">
+                View project
+              </button>
               
             </div>
           </div>
+
           
-          <div class="card bg-dark">
-            <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+<!-- Modal -->
+<div class="modal fade" id="Modalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="card-img-top" src="images/chill.png" alt="Card image" style="width:100%">
+      </div>
+      <div class="modal-footer d-flex">
+        <h4 class="modal-title mr-auto p-2" id="exampleModalLabel">Image Repository</h4>
+        <a href="https://boiling-lake-63757.herokuapp.com/" target="_blank" class="btn btn-dark p-2">See live</a>
+        <a href="https://github.com/Stephanie041996/Image_Repository" target="_blank" class="btn btn-dark p-2">See Source</a>
+      </div>
+      <div class="details-content pr-4 pl-4" >
+      <div class="btn-group pb-4">
+        <a href="#" class="btn btn-dark">Ruby on Rails</a>
+        <a href="#" class="btn btn-dark">PostgreSQL</a>
+      
+      </div> 
+      <br>
+      <p>This is an Image Repository App built with Ruby on Rails. The App is called Image Hub and is a photo sharing platform. It is to help people experince new places through photos. search for Images of places you may want to travel and also share your own images and add a location in the caption. You may only Edit or Delete images if you are the one who posted it.</p>
+    </div>
+  </div>
+  </div>
+</div>
+<!--model ends-->
+          <div class="card ">
+            <img class="card-img-top" src="images/Untitled design.png" alt="Card image" style="width:100%">
             <div class="card-body text-center">
-              <h4 class="card-title">Project Tittle</h4>
+              <h4 class="card-title">Domicile Real Estate Store</h4>
               <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-primary">Css/a>
-                <a href="#" class="btn btn-primary">Html</a>
-                <a href="#" class="btn btn-primary">Ruby</a>
+                <a href="#" class="btn btn-dark">Css</a>
+                <a href="#" class="btn btn-dark">Html</a>
+                <a href="#" class="btn btn-dark">Bootstrap</a>
               </div> 
               <br>
-              <a href="#" class="btn btn-primary stretched-link">View Project</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modaltwo">
+                View project
+              </button>
+              
             </div>
           </div>
-          <div class="card bg-dark">
-            <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+          <!-- Modal -->
+<div class="modal fade" id="Modaltwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="card-img-top" src="images/Untitled design.png" alt="Card image" style="width:100%">
+      </div>
+      <div class="modal-footer d-flex">
+        <h4 class="modal-title mr-auto p-2" id="exampleModalLabel">Domicile Real Estate Store</h4>
+        <a href="https://stephanie041996.github.io/Capstone1/" target="_blank" class="btn btn-dark p-2">See live</a>
+        <a href="https://github.com/Stephanie041996/Capstone1"  target="_blank" class="btn btn-dark p-2">See Source</a>
+      </div>
+      <div class="details-content pr-4 pl-4" >
+      <div class="btn-group pb-4">
+        <a href="#" class="btn btn-dark">Css</a>
+        <a href="#" class="btn btn-dark">Html</a>
+        <a href="#" class="btn btn-dark">Bootstrap</a>
+      </div> 
+      <br>
+      <p>The project an online store website and I opted to build one that showcases properties for sell and rent. It has two pages.
+The Home page,
+        The Search page
+    </p>
+    </div>
+  </div>
+  </div>
+</div>
+<!--model ends-->
+          <div class="card">
+            <img class="card-img-top" src="images/CSS Linter Project.png" alt="Card image" style="width:100%">
             <div class="card-body text-center">
-              <h4 class="card-title">Project Tittle</h4>
+              <h4 class="card-title">CSS Linter(error checker)</h4>
               <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-primary">Css/a>
-                <a href="#" class="btn btn-primary">Html</a>
-                <a href="#" class="btn btn-primary">Ruby</a>
+                <a href="#" class="btn btn-dark">Ruby</a>
               </div> 
               <br>
-              <a href="#" class="btn btn-primary stretched-link">View Project</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modalthree">
+                View project
+              </button>
+            </div>
+          </div>
+          <!-- Modal -->
+<div class="modal fade" id="Modalthree" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="card-img-top" src="images/CSS Linter Project.png" alt="Card image" style="width:100%">
+      </div>
+      <div class="modal-footer d-flex">
+        <h4 class="modal-title mr-auto p-2" id="exampleModalLabel">CSS Linter(error checker)</h4>
+        <a href="https://github.com/Stephanie041996/Capstone_linters_project" target="_blank" class="btn btn-dark p-2">See live</a>
+        <a href="https://github.com/Stephanie041996/Capstone_linters_project" target="_blank" class="btn btn-dark p-2">See Source</a>
+      </div>
+      <div class="details-content pr-4 pl-4" >
+      <div class="btn-group pb-4">
+        <a href="#" class="btn btn-dark">Ruby</a>
+      </div> 
+      <br>
+      <p>This is a basic CSS linter project. It checks basic syntax in the provided CSS file and returns error messages.</p>
+    </div>
+  </div>
+  </div>
+</div>
+<!--model ends-->
+          <div class="card">
+            <img class="card-img-top" src="images/At YourTableCatering.png" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-title">At Your Table Catering</h4>
+              <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-dark">Wordpress</a>
+                <a href="#" class="btn btn-dark">UI Design</a>
+                <a href="#" class="btn btn-dark">Figma</a>
+              </div> 
+              <br>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modalfour">
+                View project
+              </button>
             </div>
           </div>  
-          <div class="card bg-dark">
-            <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+          <!-- Modal -->
+<div class="modal fade" id="Modalfour" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="card-img-top" src="images/At YourTableCatering.png" alt="Card image" style="width:100%">
+      </div>
+      <div class="modal-footer d-flex">
+        <h4 class="modal-title mr-auto p-2" id="exampleModalLabel">At your Table catering</h4>
+        <a href="https://atyourtablecatering.co.zw/" target="_blank" class="btn btn-dark p-2">See live</a>
+        <a href="https://atyourtablecatering.co.zw/" target="_blank" class="btn btn-dark p-2">See Source</a>
+      </div>
+      <div class="details-content pr-4 pl-4" >
+      <div class="btn-group pb-4">
+        <a href="#" class="btn btn-dark">Wordpress</a>
+        <a href="#" class="btn btn-dark">UI Design</a>
+        <a href="#" class="btn btn-dark">Figma</a>
+      </div> 
+      <br>
+      <p>This freelance website design project is an original design, UI design was created using Figma for a food catering online booking site. Wordpress was used as the tool of design by the customer to allow for easy use of the CMS in the backend.</p>
+    </div>
+  </div>
+  </div>
+</div>
+<!--model ends-->
+          <div class="card ">
+            <img class="card-img-top" src="images/Productivity App.png" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-title">Productivity Mobile App</h4>
+              <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-dark">Ruby on Rails</a>
+                <a href="#" class="btn btn-dark">Bootstrap</a>
+              </div> 
+              <br>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modalfive">
+                View project
+              </button>
+            </div>
+          </div>
+          <!-- Modal -->
+<div class="modal fade" id="Modalfive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="card-img-top" src="images/Productivity App.png" alt="Card image" style="width:100%">
+      </div>
+      <div class="modal-footer d-flex">
+        <h4 class="modal-title mr-auto p-2" id="exampleModalLabel">Productivity Mobile App</h4>
+        <a href="https://radiant-chamber-42308.herokuapp.com/" target="_blank" class="btn btn-dark p-2">See live</a>
+        <a href="https://github.com/Stephanie041996/Activity_App" target="_blank" class="btn btn-dark p-2">See Source</a>
+      </div>
+      <div class="details-content pr-4 pl-4" >
+      <div class="btn-group pb-4">
+        <a href="#" class="btn btn-dark">Ruby on Rails</a>
+        <a href="#" class="btn btn-dark">PostgreSQL</a>
+        <a href="#" class="btn btn-dark">Bootstrap</a>
+      </div> 
+      <br>
+      <p>Group Productivity is a mobile-only app where you can sign up (and/or sign in) using only your name, create groups and add activities. View created groups, created by all users and view your own groups and activities. Keep track of the mins you spent on your activities, stay motivated by comparing to others on the app, make it a fun competetion. This Ruby on Rails project is based on an app for grouping activities by goal with your family/friends</p>
+    </div>
+  </div>
+  </div>
+</div>
+<!--model ends-->
+          <div class="card">
+            <img class="card-img-top" src="images/img_avatar1.png" alt="Card image" style="width:100%">
             <div class="card-body text-center">
               <h4 class="card-title">Project Tittle</h4>
               <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-primary">Css/a>
-                <a href="#" class="btn btn-primary">Html</a>
-                <a href="#" class="btn btn-primary">Ruby</a>
+                <a href="#" class="btn btn-dark">Css</a>
+                <a href="#" class="btn btn-dark">Html</a>
+                <a href="#" class="btn btn-dark">Ruby</a>
               </div> 
               <br>
-              <a href="#" class="btn btn-primary stretched-link">View Project</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modalsix">
+                View project
+              </button>
             </div>
           </div>
-          <div class="card bg-dark">
-            <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
-            <div class="card-body text-center">
-              <h4 class="card-title">Project Tittle</h4>
-              <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-primary">Css/a>
-                <a href="#" class="btn btn-primary">Html</a>
-                <a href="#" class="btn btn-primary">Ruby</a>
-              </div> 
-              <br>
-              <a href="#" class="btn btn-primary stretched-link">View Project</a>
-            </div>
-          </div>
+            <!-- Modal -->
+<div class="modal fade" id="Modalsix" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="card-img-top" src="images/img_avatar1.png" alt="Card image" style="width:100%">
+      </div>
+      <div class="modal-footer d-flex">
+        <h4 class="modal-title mr-auto p-2" id="exampleModalLabel">Project Six title</h4>
+        <a href="#" target="_blank" class="btn btn-dark p-2">See live</a>
+        <a href="#" target="_blank" class="btn btn-dark p-2">See Source</a>
+      </div>
+      <div class="details-content pr-4 pl-4" >
+      <div class="btn-group pb-4">
+        <a href="#" class="btn btn-dark">Css</a>
+        <a href="#" class="btn btn-dark">Html</a>
+        <a href="#" class="btn btn-dark">Ruby</a>
+      </div> 
+      <br>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+    </div>
+  </div>
+  </div>
+</div>
+<!--model ends-->
         </div>
       </div>
-      <div class="container-about text-center">
-        <h3>About Me</h3>
-        <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-          don’t hestiate to contact me.</p>
-          <a href="#" class="btn btn-primary stretched-link">View Project</a>
+      <a id="about"><div class="container text-center"></a>
+
+        <a id="about"><h3>About Me</h3>
+        <h4> I can help you build a product , feature or website Look through some of my work and experience! <br>If you like what you see and have a project you need coded, <br>
+          don’t hestiate to contact me.</h4>
+          <a href="Stephanie Sakuhuni Resume.docx"  class="btn btn-dark" download="resume">Get my Resume</a>
 
       </div>
       <div class="container">
         <div class="card-columns">
-          <div class="card bg-primary">
-            <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
-            <div class="card-img-overlay text-center">
+          <div class="card overview">
+            
+            <div class="card-body text-center">
+              <i class="fas fa-globe fa-3x"></i>
               <h4 class="card-title">Languages</h4>
               <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-primary">Css/a>
-                <a href="#" class="btn btn-primary">Html</a>
-                <a href="#" class="btn btn-primary">Ruby</a>
+                <a href="#" class="btn btn-dark">Ruby</a>
+                <a href="#" class="btn btn-dark">Javascript</a>
               </div> 
               <br>
               
             </div>
           </div>
-          <div class="card bg-warning">
-            <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
-            <div class="card-img-overlay text-center">
+          <div class="card overview">
+            
+            <div class="card-body text-center">
+              <i class="fas fa-cogs fa-3x"></i>
               <h4 class="card-title">Frameworks</h4>
+              <div class="btn-group btn-group-justified pb-2">
+                <a href="#" class="btn btn-dark">Ruby on Rails</a>
+                <a href="#" class="btn btn-dark">Bootstrap</a>
+      
+              </div> 
+             
               <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-primary">Css/a>
-                <a href="#" class="btn btn-primary">Html</a>
-                <a href="#" class="btn btn-primary">Ruby</a>
+                <a href="#" class="btn btn-dark">RSpec</a>
+                <a href="#" class="btn btn-dark">Wordpress</a>
+
               </div> 
               <br>
-              
             </div>
           </div>
-          <div class="card bg-success">
-            <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
-            <div class="card-img-overlay text-center">
+          <div class="card overview">
+            
+            <div class="card-body text-center">
+              <i class="fas fa-bolt fa-3x"></i>
               <h4 class="card-title">Skills</h4>
               <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-primary">Css/a>
-                <a href="#" class="btn btn-primary">Html</a>
-                <a href="#" class="btn btn-primary">Ruby</a>
+                <a href="#" class="btn btn-dark">GitHub</a>
+                <a href="#" class="btn btn-dark">Terminal</a>
+                <a href="#" class="btn btn-dark ">UI Design</a>
               </div> 
               <br>
-              
+            
             </div>
           </div>
           </div>
       </div>
-     <div class="contact">
+      <a id="contact"><div class="container"></div></a>
+        <div class="contact">
       <div class="row">
 
         <!--Grid column-->
-        <div class="col-md-6 mb-4">
-          <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch</h3>
-          </div>
+        <div class="col-md-6 mb-4 p-6">
+          <div class="form-text d-flex justify-content-center">
+          <h4>I'm always interested in hearing about <br>new projects, so if you'd like to chat<br> please get in touch</h4></div>
+
+          <br>
+          <div class="form-text ">
+          <img src="images/Project_2-13.jpg" alt="girl" width="300" height="300">
+        </div>
+      </div>
           <!--Grid column-->
           <div class="col-md-6 mb-4">
           <form>
@@ -278,23 +481,36 @@
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
             </div>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
+              <label for="exampleFormControlInput1">Email </label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
 
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <label for="exampleFormControlTextarea1">Message</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-dark">Submit</button>
           </form>
           </div>
           </div>
      </div>
+    </div>
 
    </div>
-     
+  </main>
     
+
+  <div class="footer  p-4 d-flex justify-content-center">
+
+    <a href="https://github.com/Stephanie041996" class="icon" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+               
+               
+    <a href="https://www.linkedin.com/in/stephanie-michelle-sakuhuni/"  class="icon" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+
+  <a href="" class="icon"><i class="fab fa-angellist fa-2x"></i></a>
+
+
+  </div>
 </body>
 
 <script>
@@ -316,4 +532,6 @@ $(window).on("scroll", function() {
     }
 })
 </script>
+
+
 </html>
