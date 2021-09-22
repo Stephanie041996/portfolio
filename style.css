@@ -199,7 +199,7 @@ background-color: #1C1A19;
 /* ON large screen */
 @media screen and (min-width: 768px) {
     .container-showcase{
-        padding: 150px !important;
+        padding: 240px !important;
       
         } 
         .btn, .btn-dark, .a{
