@@ -192,6 +192,9 @@ background-color: #1C1A19;
     color: #fff;
 }
 
+.message{
+    padding-top: 200px;
+}
 
 /* ON large screen */
 @media screen and (min-width: 768px) {
